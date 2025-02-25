@@ -18,7 +18,6 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "docs",
-            "baseHref": "ihcasa.com",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
