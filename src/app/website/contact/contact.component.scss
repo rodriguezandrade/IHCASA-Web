@@ -1,0 +1,22 @@
+@import url(../../../styles.scss);
+
+.header-container {
+  position: absolute;
+  z-index: 4;
+  h2 {
+    font-family: 'Inter', Helvetica;
+    font-size: 56px;
+    font-weight: bold;
+  }
+  p {
+    font-family: 'Inter', Helvetica;
+    font-size: 18px;
+  }
+}
+
+.contact-banner {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}

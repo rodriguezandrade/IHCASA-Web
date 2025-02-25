@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+/* Inter Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Roboto Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --color-primary: #092B54;
+  --color-secondary: #BC0000;
+  --color-tertiary: #F2F2F7;
+
+  /* Root Fonts */
+  --Inter-text-body-font-family: "Inter", Helvetica;
+  --Inter-text-body-letter-spacing: 0px;
+  --Inter-text-body-line-height: normal;
+  --Inter-text-body-font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.btn-outline-primary {
+  color: var(--color-primary);
+  background: none !important;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: solid var(--color-primary) 1px;
+  cursor: pointer;
+}
+
+.active {
+  color: var(--color-secondary) !important;
+  font-weight: 800 !important;
+}

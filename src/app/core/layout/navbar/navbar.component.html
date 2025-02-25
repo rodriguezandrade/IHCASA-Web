@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg bg-body-white navbar-height">
+  <div class="container navigation align-items-start align-items-lg-center">
+    <a routerLink="/" class="navbar-logo mt-3 mt-lg-5 pt-lg-4">
+      <img class="logo-ihcasa" src="assets/logo-red.svg" alt="Logo IHCASA">
+    </a>
+    <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+    <button class="navbar-toggler mt-3 mt-lg-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <span>
+        <img class="menu-icon" src="assets/images/icons/navbar-icons/menu-primary-icon.svg" alt="Menu Icon">
+      </span>
+      <!-- <span class="navbar-toggler-icon"></span> -->
+    </button>
+
+    <!-- <button class="navbar-toggler mt-3 mt-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ms-lg-5">
+          <a class="nav-link" routerLinkActive="active" routerLink="products">Nuestros Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="about-us">Sobre Nosotros</a>
+        </li>
+      </ul>
+      <button class="btn btn-primary">
+        <a class="text-decoration-none text-white" routerLink="contact">Contáctanos</a>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <!-- <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5> -->
+    <!-- <button type="button" class="close-btn p-3" data-bs-dismiss="offcanvas" aria-label="Close">
+      <img src="assets/images/icons/navbar-icons/close-primary-icon.svg" alt="Close Icon">
+    </button> -->
+    <button type="button" class="btn-close p-3" data-bs-dismiss="offcanvas" aria-label="Close">
+    </button>
+  </div>
+  <div class="offcanvas-body container d-flex flex-column align-items-start justidy-content-start gap-4">
+    <!-- Contact Button -->
+    <button class="btn btn-primary col-12 py-3">
+      <a data-bs-dismiss="offcanvas" class="text-decoration-none text-white" routerLink="contact">Contáctanos</a>
+    </button>
+    <!-- Links List -->
+    <ul class="navbar-nav me-auto gap-1">
+      <li class="nav-item">
+        <a class="nav-link" data-bs-dismiss="offcanvas" routerLinkActive="active" routerLink="products">Nuestros Productos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-dismiss="offcanvas" routerLinkActive="active" routerLink="about-us">Sobre Nosotros</a>
+      </li>
+    </ul>
+    <!-- Social Media Icons -->
+    <div class="d-flex flex-column align-items-start justify-content-center col-12">
+      <p class="title-column">Síguenos</p>
+      <div class="d-flex align-items-start flex-column gap-4">
+        <a class="text-reset text-decoration-none d-flex flex-row align-items-center justify-content-end gap-3" href="/" target="_blank">
+          <img class="social-icon" src="assets/images/icons/navbar-icons/facebook-primary-color.svg" alt="Facebook Icon">
+          <p class="m-0">Facebook</p>
+        </a>
+        <a class="text-reset text-decoration-none d-flex flex-row align-items-center justify-content-end gap-3" href="/" target="_blank">
+          <img class="social-icon" src="assets/images/icons/navbar-icons/instagram-primary-color.svg" alt="Instagram Icon">
+          <p class="m-0">Instagram</p>
+        </a>
+        <a class="text-reset text-decoration-none d-flex flex-row align-items-center justify-content-end gap-3" href="/" target="_blank">
+          <img class="social-icon" src="assets/images/icons/navbar-icons/youtube-primary-color.svg" alt="Youtube Icon">
+          <p class="m-0">Youtube</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

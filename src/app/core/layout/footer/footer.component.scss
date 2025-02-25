@@ -1,0 +1,53 @@
+@import url(../../../../styles.scss);
+
+.footer-section {
+  background: #092B54;
+  color: white;
+}
+
+.footer-logo {
+  width: 95px;
+  max-width: 100%;
+}
+
+.input-neswletter {
+  /* padding: 8px 15px; */
+  border: solid white 1px;
+  border-radius: 6px;
+  background: none;
+  color: white;
+}
+input:focus-visible {
+  outline: none;
+}
+
+.boletin-text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', Helvetica;
+  line-height: 24px;
+}
+.privacy-boletin {
+  font-family: 'Inter', Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.copyrights-container{
+  gap: 32px;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background: white;
+}
+
+.social-icon {
+  width: 30px;
+}
+
+.title-column {
+  font-weight: 700;
+}

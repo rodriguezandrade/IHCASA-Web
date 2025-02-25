@@ -1,0 +1,169 @@
+@import url(../../../styles.scss);
+
+.about-banner {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.header-container {
+  position: absolute;
+  z-index: 4;
+  h2 {
+    font-family: 'Inter', Helvetica;
+    font-size: 56px;
+    font-weight: bold;
+  }
+  p {
+    font-family: 'Inter', Helvetica;
+    font-size: 18px;
+  }
+}
+
+.about-section {
+  padding: 112px 0;
+  .about-title {
+    font-family: 'Inter', Helvetica;
+    color: var(--color-primary);
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
+
+.license-title {
+  font-size: 40px;
+  font-family: 'Inter', Helvetica;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.license-img {
+  width: 616px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-mision {
+  border: solid var(--color-primary) 1px;
+  padding: 32px;
+  border-radius: 32px;
+  width: 351px;
+  min-height: 264px;
+  cursor: pointer;
+  h6 {
+    font-size: 24px;
+    font-family: 'Inter', Helvetica;
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+    font-family: 'Inter', Helvetica;
+    color: var(--color-primary);
+    font-weight: normal;
+  }
+}
+
+.bg-gray {
+  background: var(--color-tertiary);
+  border-radius: 30px;
+  width: 100%;
+  object-fit: cover;
+  gap: 80px;
+  padding: 112px 0;
+}
+
+/* .img-card-mision {
+  width: 50px;
+  height: auto;
+} */
+
+.team-title {
+  font-family: 'Inter', Helvetica;
+  font-size: 48px;
+  font-weight: bold;
+}
+.team-subtitle {
+  font-family: 'Inter', Helvetica;
+  font-size: 18px;
+}
+.team-list {
+  .team-card {
+    img {
+      width: 80px;
+      max-width: 100%;
+    }
+    .name-profile {
+      font-family: 'Inter', Helvetica;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .role-profile {
+      font-family: 'Inter', Helvetica;
+      font-size: 18px;
+    }
+    .desc-profile {
+      font-family: 'Inter', Helvetica;
+      font-size: 16px;
+    }
+  }
+}
+
+.gallery-items {
+  .picture-item img {
+    width: 304px;
+    max-width: 100%;
+    transition: all .3s ease;
+  }
+  .main-picture img {
+    width: 640px;
+    max-width: 100%;
+    border-radius: 30px;
+    transition: all .3s ease;
+  }
+}
+.gallery-items img:hover,
+.main-picture img:hover {
+  filter: drop-shadow(#64646f90 0rem 0.2rem 10px);
+}
+
+
+@media screen and (max-width: 767px) {
+  .about-banner {
+    height: 475px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .header-container {
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .about-section {
+    padding: 64px 0;
+    .about-title {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+  .license-title {
+    font-size: 36px;
+  }
+
+  .gallery-items {
+    .picture-item img {
+      width: 350px;
+      min-width: 100%;
+    }
+    .main-picture img {
+      width: 350px;
+      max-width: 100%;
+      border-radius: 30px;
+    }
+  }
+}

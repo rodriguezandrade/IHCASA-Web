@@ -1,0 +1,60 @@
+@import url(../../../styles.scss);
+
+/* ====================== Catalog Shared Styles Start ====================== */
+
+.bg-catalog {
+  color: white;
+  .bg-catalog-img {
+    object-fit: cover;
+    border-radius: 30px;
+    width: 100%;
+    height: 340px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cta-container {
+    padding: 112px 64px;
+    position: absolute;
+    z-index: 5;
+    .cta-title {
+      font-size: 48px;
+      font-family: 'Inter', Helvetica;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  .cta-description {
+    text-align: right;
+    font-size: 18px;
+  }
+  .cta-link {
+    font-family: 'Roboto', Helvetica;
+    font-size: 16px;
+  }
+}
+
+/* ====================== Catalog Shared Styles End ====================== */
+
+@media screen and (max-width: 767px) {
+  .bg-catalog {
+    .bg-catalog-img {
+      height: 388px;
+    }
+    .cta-container {
+      padding: 24px;
+      .cta-title {
+        text-align: center;
+        font-size: 32px;
+      }
+    }
+    .cta-description {
+      text-align: center;
+      font-size: 18px;
+    }
+    .cta-link {
+      font-family: 'Roboto', Helvetica;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@import url(../../../styles.scss);
+
+.header-container {
+  position: absolute;
+  z-index: 4;
+  h2 {
+    font-family: 'Inter', Helvetica;
+    font-size: 56px;
+    font-weight: bold;
+  }
+  p {
+    font-family: 'Inter', Helvetica;
+    font-size: 18px;
+  }
+}
+
+.products-banner {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.products-section {
+  padding: 112px 0;
+  .products-title {
+    font-family: 'Inter', Helvetica;
+    color: var(--color-primary);
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
+
+.card-product {
+  img {
+    width: 300px;
+    max-width: 100%;
+    transition: all .3s ease;
+  }
+  img:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(#64646f90 0rem 0.2rem 10px);
+  }
+  .card-product-title {
+    font-family: 'Inter', Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .card-product-desc {
+    font-family: 'Inter', Helvetica;
+    font-size: 14px;
+  }
+}
+
+/* Accordion Styles */
+.accordion-item {
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+.accordion-button {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.accordion-body {
+  font-weight: 300;
+}
+.accordion-button:not(.collapsed) {
+  background: transparent !important;
+}
+button:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+  border-radius: 0;
+}
+.accordion-button::after {
+  background-image: none;
+  transform: translateY(-10px);
+  content: '+';
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--primary-color);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: translate(5px, -10px);
+  content: '-';
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 767px) {
+  .card-product {
+    img {
+      width: 400px;
+      max-width: 100%;
+    }
+    .card-product-title {
+      font-family: 'Inter', Helvetica;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .card-product-desc {
+      font-family: 'Inter', Helvetica;
+      font-size: 14px;
+    }
+  }
+}

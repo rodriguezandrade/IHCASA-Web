@@ -1,0 +1,67 @@
+@import url(../../../styles.scss);
+
+.bg-newsletter {
+  background: var(--color-tertiary);
+  border-radius: 30px;
+  padding: 112px 64px;
+  .newsletter-title {
+    font-family: 'Inter', Helvetica;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 120%;
+  }
+  .newsletter-content {
+    .newsletter-container {
+      .news-description {
+        font-family: 'Inter', Helvetica;
+        font-size: 16px;
+      }
+      .input-neswletter {
+        min-width: 300px;
+        font-size: 16px;
+        border: solid #2c2c2c 1px;
+        border-radius: 6px;
+        background: none;
+        color: #2c2c2c;
+      }
+      input:focus-visible {
+        outline: none;
+      }
+      .btn-primary {
+        font-size: 15px;
+      }
+    }
+    .privacy-boletin {
+      font-family: 'Inter', Helvetica;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .bg-newsletter {
+    padding: 24px;
+    .newsletter-title {
+      font-size: 45px;
+    }
+    .newsletter-content {
+      .newsletter-container {
+        .news-description {
+          font-size: 20px;
+        }
+        .input-neswletter {
+          font-size: 19px;
+        }
+        .btn-primary {
+          font-size: 20px;
+        }
+      }
+      .privacy-boletin {
+        font-size: 15px;
+      }
+    }
+  }
+}

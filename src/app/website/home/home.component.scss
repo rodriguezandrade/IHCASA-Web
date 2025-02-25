@@ -1,0 +1,139 @@
+@import url(../../../styles.scss);
+
+/* ====================== Hero Banner Styles Start ====================== */
+.hero-banner {
+  background: url('../../../assets/images/home/hero-banner.webp') no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  width: auto;
+  color: white;
+}
+
+.hero-info {
+  position: absolute;
+  .hero-title {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    max-width: 700px;
+  }
+  .hero-description {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 300;
+    /* max-width: 640px; */
+  }
+  .hero-buttons {
+    gap: 16px;
+    .btn-light,
+    .btn-outline-light {
+      padding: 12px 24px;
+    }
+    .btn-light a,
+    .btn-outline-light a {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.black-color {
+  background-color: #00000080;
+  height: 700px;
+}
+/* ====================== Hero Banner Styles End ====================== */
+
+/* ====================== Meat Exported Styles Start ====================== */
+
+.title-meat-exported {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.description-meat-exported {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+.exported-meat-buttons {
+  .btn-primary,
+  .btn-outline-primary {
+    padding: 12px 24px;
+  }
+}
+
+.image-meat-container img {
+  width: 550px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+/* ====================== Meat Exported Styles End ====================== */
+
+
+/* ====================== Cards Banner Styles Start ====================== */
+.cards-banner {
+  .cards-banner-title {
+    font-family: 'Inter', Helvetica;
+    color: var(--color-primary);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+}
+
+.card {
+  background: var(--color-secondary);
+  color: white;
+  font-family: 'Inter', Helvetica;
+  border-radius: 30px;
+  max-width: 400px;
+  border: none;
+  .img-icon {
+    width: 74px;
+  }
+  .icon-note {
+    width: 65px;
+  }
+  .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+  }
+  .card-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .card-link {
+    font-family: 'Roboto', Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    .link-icon {
+      width: 30px;
+    }
+  }
+}
+
+/* ====================== Cards Banner Styles End ====================== */
+
+
+
+
+@media screen and (max-width: 767px) {
+  .image-meat-container img {
+    width: 380px;
+    height: 400px;
+  }
+  .hero-title {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+  }
+}

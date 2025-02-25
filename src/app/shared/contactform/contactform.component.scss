@@ -1,0 +1,37 @@
+@import url(../../../styles.scss);
+
+.subtitle-contact {
+  font-size: 20px;
+  font-family: 'Inter', Helvetica;
+  font-weight: bold;
+}
+
+.description-contact, contact-link, .form-label {
+  font-size: 16px;
+  font-family: 'Inter', Helvetica;
+}
+
+.contact-title {
+  font-family: 'Inter', Helvetica;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.form-check-input:focus {
+  border-color: var(--color-primary);
+}
+.form-check-input:checked {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+@media screen and (max-width: 767px) {
+  .description-contact, contact-link {
+    font-size: 17px;
+    font-family: 'Inter', Helvetica;
+  }
+}

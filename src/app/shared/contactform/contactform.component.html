@@ -1,0 +1,68 @@
+<section class="container d-flex flex-column-reverse flex-lg-row align-items-lg-start justify-content-between py-5 my-0 mb-5 my-lg-5 gap-5 gap-lg-0 px-4 px-lg-0">
+  <div class="col-12 col-lg-5 d-flex flex-column align-items-start gap-5">
+    <div class="d-flex flex-column align-items-start gap-2">
+      <img src="assets/images/icons/email-icon.svg" alt="Email Icon">
+      <h5 class="subtitle-contact m-0">Correo</h5>
+      <p class="description-contact m-0">Escríbenos a nuestro correo</p>
+      <a class="contact-link" href="mailto:{{ email1 }}, {{ email2 }}">{{ email1 }} | {{ email2 }}</a>
+    </div>
+    <div class="d-flex flex-column align-items-start gap-2">
+      <img src="assets/images/icons/phone-icon.svg" alt="Phone Icon">
+      <h5 class="subtitle-contact m-0">Teléfono</h5>
+      <p class="description-contact m-0">Llámanos para más información</p>
+      <a class="contact-link" href="tel:{{ phone }}">{{ phone }}</a>
+    </div>
+    <div class="d-flex flex-column align-items-start gap-2">
+      <img src="assets/images/icons/location-icon.svg" alt="Location Icon">
+      <h5 class="subtitle-contact m-0">Dirección</h5>
+      <p class="description-contact m-0">9 avenida, 8 calle. Barrio Concepción, Honduras, C.A.</p>
+      <a class="contact-link" href="https://maps.app.goo.gl/fqyaeUvHbbE8w7396" target="_blank">Ver Mapa
+        <img class="mb-1 ms-1" src="/assets/images/icons/right-icon.svg" alt="Chevron Icon"></a>
+    </div>
+  </div>
+  <div class="col-12 col-lg-6">
+    <h3 class="contact-title">Contáctanos</h3>
+    <p>Estamos aquí para responder tus consultas.</p>
+    <form [formGroup]="contactForm" class="needs-validation" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+      <label for="nameSuscriptor" class="form-label">Nombre</label>
+      <input formControlName="name" type="text" class="form-control" id="nameSuscriptor" required>
+      <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="invalid-feedback">
+        Nombre es requerido.
+      </div>
+      </div>
+      <div class="mb-3">
+      <label for="emailSuscriptor" class="form-label">Email address</label>
+      <input formControlName="email" type="email" class="form-control" id="emailSuscriptor" required>
+      <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="invalid-feedback">
+        Por favor, ingrese un correo electrónico válido.
+      </div>
+      </div>
+      <div class="mb-3">
+      <label for="phoneSuscriptor" class="form-label">Teléfono</label>
+      <input formControlName="phone" type="text" class="form-control" id="phoneSuscriptor" required>
+      <div *ngIf="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched" class="invalid-feedback">
+        Teléfono es requerido.
+      </div>
+      </div>
+      <div class="mb-3">
+      <label for="messageSuscriptor" class="form-label">Mensaje</label>
+      <textarea formControlName="message" class="form-control" id="messageSuscriptor" rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+      <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="invalid-feedback">
+        Mensaje es requerido.
+      </div>
+      </div>
+      <div class="mb-3 form-check">
+      <input type="checkbox" formControlName="terms" class="form-check-input" id="termsSuscriptor" required>
+      <label class="form-check-label" for="termsSuscriptor">Acepto los Términos</label>
+      <div *ngIf="contactForm.get('terms')?.invalid && contactForm.get('terms')?.touched" class="invalid-feedback">
+        Debe aceptar los términos.
+      </div>
+      </div>
+      <button [disabled]="contactForm.invalid" type="submit" class="btn btn-primary my-3 col-12 col-lg-2">Enviar</button>
+      <br>
+      <span class="form-text">*El botón "Enviar" se habilitará cuando el formulario sea válido.</span>
+    </form>
+  </div>
+</section>
+

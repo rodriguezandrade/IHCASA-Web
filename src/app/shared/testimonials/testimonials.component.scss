@@ -1,0 +1,117 @@
+@import url(../../../styles.scss);
+
+.testimonials-title {
+  font-family: 'Inter', Helvetica;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.testimonials-content {
+  display: block;
+  background-color: white;
+  height: 400px;
+  align-items: center;
+  place-content: center;
+}
+
+/* .carousel {
+  overflow: hidden;
+} */
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .carousel-item {
+  position: relative;
+  float: none;
+  width: 0;
+  margin-right: 0;
+  backface-visibility: hidden;
+  transition: transform .6s ease-in-out;
+} */
+
+.carousel-caption {
+  display: block;
+  place-items: center;
+  place-content: center;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #2b2b2b;
+  text-align: center;
+  h5 {
+    font-family: 'Inter', Helvetica;
+    font-size: 18px;
+  }
+  p {
+    font-family: 'Inter', Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 140%;
+  }
+}
+
+.carousel-indicators {
+  margin-bottom: -30px;
+  /* margin-top: 1rem; */
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border-top: 0;
+  border-bottom: 0;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.active {
+  color: var(--color-primary);
+}
+
+.profile-testimonial {
+  h6 {
+    font-family: 'Inter', Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  p {
+    font-family: 'Inter', Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.img-testimonial {
+  width: 56px;
+  max-width: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  align-items: start;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  border: solid white 2px;
+  padding: 15px;
+  border-radius: 100%;
+  font-size: 0.8em;
+
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-indicators {
+    margin-bottom: -50px;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+  }
+}

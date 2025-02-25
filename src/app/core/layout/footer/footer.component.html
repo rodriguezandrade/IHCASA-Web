@@ -1,0 +1,49 @@
+<footer class="footer-section container-fluid py-5">
+  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between mt-3 col-lg-9 gap-5 gap-lg-0">
+    <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start justify-content-center">
+      <a routerLink="/">
+        <img class="footer-logo" src="assets/logo-red.svg" alt="Logo Image">
+      </a>
+      <p class="col-lg-10 col-12 boletin-text">Suscríbete a nuestro boletín para estar al tanto de novedades y lanzamientos.</p>
+      <div class="newsletter-container d-flex flex-column gap-2">
+        <!-- TODO: Make the suscription -->
+        <form class="" [formGroup]="newsletterForm" (ngSubmit)="submitNewsletter()">
+          <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-start justify-content-center gap-3">
+            <input formControlName="email" class="input-neswletter col-12 col-lg-8 p-3 p-lg-2" type="text" placeholder="Introduce tu correo" required>
+            <button class="btn btn-outline-light col-12 col-md-3 p-3 p-lg-2" type="submit">Suscribirse</button>
+          </div>
+        </form>
+        <p class="col-10 privacy-boletin">Al suscribirte, aceptas nuestra Política de Privacidad y consientes recibir actualizaciones.</p>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-lg-start align-items-center justify-content-center col-12 col-lg-2">
+      <p class="title-column">Navegación</p>
+      <div class="d-flex flex-column align-items-lg-start align-items-center justify-content-center gap-3">
+        <a class="text-reset text-decoration-none" routerLink="/products">Nuestros Productos</a>
+        <a class="text-reset text-decoration-none" routerLink="/about-us">Sobre Nosotros</a>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-lg-end align-items-center justify-content-center col-lg-2 col-12">
+      <p class="title-column">Síguenos</p>
+      <!-- TODO: Link the IHCASA's Social Media -->
+      <div class="d-flex align-items-lg-end align-items-center align-items-end flex-column gap-3">
+        <a class="text-reset text-decoration-none d-flex flex-row align-items-center justify-content-end gap-3" href="/" target="_blank">
+          <img class="social-icon" src="assets/images/icons/facebook-icon.svg" alt="Facebook Icon">
+          <p class="m-0">Facebook</p>
+        </a>
+        <a href="/" class="text-reset text-decoration-none d-flex flex-row align-items-center justify-content-end gap-3" target="_blank">
+          <img class="social-icon" src="assets/images/icons/instagram-icon.svg" alt="Instagram Icon">
+          <p class="m-0">Instagram</p>
+        </a>
+        <a class="text-reset text-decoration-none d-flex flex-row align-items-center justify-content-end gap-3" href="/" target="_blank">
+          <img class="social-icon" src="assets/images/icons/youtube-icon.svg" alt="Youtube Icon">
+          <p class="m-0">Youtube</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="copyrights-container container d-flex flex-column align-items-center justify-content-center col-lg-9 mt-5">
+    <div class="footer-line"></div>
+    <p>© {{ currentYear }} IHCASA. Todos los derechos reservados.</p>
+  </div>
+</footer>
