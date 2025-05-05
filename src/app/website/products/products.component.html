@@ -1,16 +1,17 @@
 <section class="products-header d-flex align-items-center justify-content-center">
   <div class="header-container d-flex flex-column align-items-center col-12 container">
-    <h2 class="text-white text-center">Carnes Premium</h2>
-    <p class="text-white text-center col-12 col-lg-6">En IHCASA ofrecemos una selección de carnes importadas de la mas alta calidad, adaptadas a tus necesidades.</p>
+    <h2 class="text-center">Nuestros Productos</h2>
+    <p class="text-center col-10 col-md-8 col-lg-5">En IHCASA ofrecemos una selección de carnes importadas de la mas alta calidad, adaptadas a tus necesidades.</p>
   </div>
-  <img class="products-banner" src="assets/images/contact/banner.webp" alt="Header banner image">
+  <img class="d-block d-md-none products-banner" [src]="['assets/images/about/banner-mobile.svg']" alt="Header banner image">
+  <img class="d-none d-md-block products-banner" [src]="['assets/images/about/banner.svg']" alt="Header banner image">
 </section>
 
 <section class="container products-section d-flex flex-column align-items-center gap-4 gap-lg-5">
   <div class="container products d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4 gap-lg-0">
     <div class="col-12 col-lg-6">
-      <h3 class="products-title">Nuestros Productos</h3>
-      <p class="m-0 col-10 col-lg-12">Descubre nuestra selección de carnes de cerdo y res.</p>
+      <h3 class="products-title">Carnes Premium</h3>
+      <p class="m-0 col-10 col-lg-12">Descubre nuestra selección de carnes de cerdo, res y pollo.</p>
     </div>
     <div class="col-12 col-lg-5 d-flex flex-column align-items-end">
       <button class="btn btn-primary col-12 col-lg-3 py-3 py-lg-2">
@@ -18,29 +19,29 @@
       </button>
     </div>
   </div>
-  <div class="container products-cards d-flex flex-column flex-lg-row align-items-lg-start align-items-center justify-content-between gap-5 gap-lg-2 col-12">
-    <div class="card-product d-flex flex-column align-items-start gap-3 col-lg-3 col-11">
+  <div class="container products-cards d-flex flex-wrap align-items-lg-start align-items-center justify-content-center justify-content-lg-between gap-5 gap-lg-0 mt-4">
+    <div class="card-product d-flex flex-column align-items-start gap-3">
       <img src="assets/images/products/product-1.webp" alt="Product Image">
       <div class="d-flex flex-column align-items-start gap-1">
         <h5 class="card-product-title m-0">Carne de Res</h5>
         <p class="card-product-desc m-0 col-lg-10">Cortes premium como: ribeye, T-bone y brisket.</p>
       </div>
     </div>
-    <div class="card-product d-flex flex-column align-items-start gap-3 col-lg-3 col-11">
+    <div class="card-product d-flex flex-column align-items-start gap-3">
       <img src="assets/images/products/product-2.webp" alt="Product Image">
       <div class="d-flex flex-column align-items-start gap-1">
         <h5 class="card-product-title m-0">Carnes de Cerdo</h5>
         <p class="card-product-desc m-0 col-lg-10">Chuleta, costillas y cortes seleccionados.</p>
       </div>
     </div>
-    <div class="card-product d-flex flex-column align-items-start gap-3 col-lg-3 col-11">
+    <div class="card-product d-flex flex-column align-items-start gap-3">
       <img src="assets/images/products/product-3.webp" alt="Product Image">
       <div class="d-flex flex-column align-items-start gap-1">
         <h5 class="card-product-title m-0">Carnes de Pollo</h5>
         <p class="card-product-desc m-0 col-lg-10">Pechuga, muslos y alitas frescas y jugosas.</p>
       </div>
     </div>
-    <div class="card-product d-flex flex-column align-items-start gap-3 col-lg-3 col-11">
+    <div class="card-product d-flex flex-column align-items-start gap-3">
       <img src="assets/images/products/product-4.webp" alt="Product Image">
       <div class="d-flex flex-column align-items-start gap-1">
         <h5 class="card-product-title m-0">Otras Carnes</h5>
@@ -52,9 +53,9 @@
 
 <app-catalog></app-catalog>
 
-<app-testimonials></app-testimonials>
+<!-- <app-testimonials></app-testimonials> -->
 
-<app-newsletter></app-newsletter>
+<!-- <app-newsletter></app-newsletter> -->
 
 <section class="container products-section">
   <div class="container products d-flex flex-column flex-lg-row align-items-start justify-content-between gap-5 gap-lg-0">

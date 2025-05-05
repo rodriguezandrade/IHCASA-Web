@@ -7,10 +7,12 @@
     font-family: 'Inter', Helvetica;
     font-size: 56px;
     font-weight: bold;
+    color: var(--color-primary);
   }
   p {
     font-family: 'Inter', Helvetica;
     font-size: 18px;
+    color: var(--color-primary);
   }
 }
 
@@ -33,7 +35,7 @@
 
 .card-product {
   img {
-    width: 300px;
+    width: 315px;
     max-width: 100%;
     transition: all .3s ease;
   }
@@ -91,12 +93,22 @@ button:focus:not(:focus-visible) {
   color: var(--primary-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .products-banner {
+    height: 230px;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .products-banner {
+    height: auto;
+  }
+
   .card-product {
-    img {
+    /* img {
       width: 400px;
       max-width: 100%;
-    }
+    } */
     .card-product-title {
       font-family: 'Inter', Helvetica;
       font-size: 18px;

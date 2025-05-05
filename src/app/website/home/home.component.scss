@@ -2,15 +2,42 @@
 
 /* ====================== Hero Banner Styles Start ====================== */
 .hero-banner {
-  background: url('../../../assets/images/home/hero-banner.webp') no-repeat center center;
+  background: url('../../../assets/images/home/banner.jpg') no-repeat center center;
   background-size: cover;
   height: 700px;
   width: auto;
   color: white;
 }
+.hero-banner-mobile {
+  /* height: 800px; */
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.hero-info-mobile {
+  padding-top: 60px;
+}
+
+.img-meat-banner {
+  width: 338px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.text-categories {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
 
 .hero-info {
-  position: absolute;
+  height: 557.75px;
+  width: 843.43px;
+  background-color: var(--color-primary);
+  border-top-right-radius: 30px;
+  padding: 80px;
+  /* position: absolute; */
   .hero-title {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 56px;
@@ -48,15 +75,19 @@
 /* ====================== Meat Exported Styles Start ====================== */
 
 .title-meat-exported {
+  text-align: center;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 700;
+  max-width: 675px;
   color: var(--color-primary);
 }
 .description-meat-exported {
+  text-align: center;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 19px;
   font-weight: 300;
+  max-width: 800px;
   color: var(--color-primary);
 }
 
@@ -87,12 +118,18 @@
   }
 }
 
+.img-map {
+  width: 1300px;
+  max-width: 100%;
+}
+
 .card {
   background: var(--color-secondary);
   color: white;
   font-family: 'Inter', Helvetica;
   border-radius: 30px;
   max-width: 400px;
+  height: 360px;
   border: none;
   .img-icon {
     width: 74px;
@@ -124,8 +161,6 @@
 /* ====================== Cards Banner Styles End ====================== */
 
 
-
-
 @media screen and (max-width: 767px) {
   .image-meat-container img {
     width: 380px;
@@ -135,5 +170,18 @@
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 48px;
     font-weight: 700;
+  }
+
+  .title-meat-exported {
+    text-align: left;
+    max-width: 100%;
+  }
+  .description-meat-exported {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .img-map {
+    max-width: 380px;
   }
 }

@@ -4,7 +4,7 @@
       <img src="assets/images/icons/email-icon.svg" alt="Email Icon">
       <h5 class="subtitle-contact m-0">Correo</h5>
       <p class="description-contact m-0">Escríbenos a nuestro correo</p>
-      <a class="contact-link" href="mailto:{{ email1 }}, {{ email2 }}">{{ email1 }} | {{ email2 }}</a>
+      <a class="contact-link" href="mailto:{{ email1 }}, {{ email2 }}">{{ email1 }}</a>
     </div>
     <div class="d-flex flex-column align-items-start gap-2">
       <img src="assets/images/icons/phone-icon.svg" alt="Phone Icon">
@@ -21,8 +21,10 @@
     </div>
   </div>
   <div class="col-12 col-lg-6">
-    <h3 class="contact-title">Contáctanos</h3>
-    <p>Estamos aquí para responder tus consultas.</p>
+    <div class="d-flex flex-column align-items-start gap-4 mb-5">
+      <h3 class="contact-title">Llena el siguiente formulario para obtener más información</h3>
+      <p class="m-0">Estamos aquí para responder tus consultas.</p>
+    </div>
     <form [formGroup]="contactForm" class="needs-validation" (ngSubmit)="onSubmit()">
       <div class="mb-3">
       <label for="nameSuscriptor" class="form-label">Nombre</label>

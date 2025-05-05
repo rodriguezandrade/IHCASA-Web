@@ -3,7 +3,9 @@
 /* ====================== Catalog Shared Styles Start ====================== */
 
 .bg-catalog {
-  color: white;
+  color: var(--color-primary);
+  background: var(--color-tertiary);
+  border-radius: 30px;
   .bg-catalog-img {
     object-fit: cover;
     border-radius: 30px;
@@ -28,6 +30,10 @@
     text-align: right;
     font-size: 18px;
   }
+  .cta-description-bold {
+    font-weight: bold;
+    text-align: right;
+  }
   .cta-link {
     font-family: 'Roboto', Helvetica;
     font-size: 16px;
@@ -35,6 +41,16 @@
 }
 
 /* ====================== Catalog Shared Styles End ====================== */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-catalog {
+    .cta-container {
+      .cta-title {
+        text-align: center;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 767px) {
   .bg-catalog {
@@ -48,7 +64,7 @@
         font-size: 32px;
       }
     }
-    .cta-description {
+    .cta-description, .cta-description-bold {
       text-align: center;
       font-size: 18px;
     }

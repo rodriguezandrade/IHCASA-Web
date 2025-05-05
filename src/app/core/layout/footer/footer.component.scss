@@ -6,7 +6,7 @@
 }
 
 .footer-logo {
-  width: 95px;
+  width: 170px;
   max-width: 100%;
 }
 
@@ -36,6 +36,13 @@ input:focus-visible {
 
 .copyrights-container{
   gap: 32px;
+  p {
+    font-weight: 300;
+  }
+}
+
+.link-text {
+  font-weight: 300;
 }
 
 .footer-line {

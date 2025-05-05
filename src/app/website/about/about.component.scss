@@ -12,11 +12,13 @@
   z-index: 4;
   h2 {
     font-family: 'Inter', Helvetica;
+    color: var(--color-primary);
     font-size: 56px;
     font-weight: bold;
   }
   p {
     font-family: 'Inter', Helvetica;
+    color: var(--color-primary);
     font-size: 18px;
   }
 }
@@ -129,10 +131,27 @@
   filter: drop-shadow(#64646f90 0rem 0.2rem 10px);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-banner {
+    height: 230px;
+  }
+
+  .gallery-items {
+    .picture-item img {
+      width: 100%;
+      min-width: 100%;
+    }
+    .main-picture img {
+      width: auto;
+      max-width: 100%;
+      border-radius: 30px;
+    }
+  }
+}
 
 @media screen and (max-width: 767px) {
   .about-banner {
-    height: 475px;
+    height: 545px;
     width: 100%;
     object-fit: cover;
   }

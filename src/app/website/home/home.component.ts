@@ -1,4 +1,6 @@
 import { Component, NgModule } from '@angular/core';
+import { cards } from 'src/app/interfaces/interfaces';
+
 
 @Component({
   selector: 'app-home',
@@ -8,4 +10,5 @@ import { Component, NgModule } from '@angular/core';
 
 export class HomeComponent {
 
+  cards = cards;
 }
